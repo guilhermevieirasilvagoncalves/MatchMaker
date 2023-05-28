@@ -46,4 +46,11 @@ VALUES (6, '2023-07-30', 112.54, '22:00', '123.123.123-43', 3, 6, '32.123.453/00
 INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
 VALUES (7, '2023-08-19', 134.65, '19:00', '343.433.644-12', 4, 7, '54.643.234/0001-22');
 
+INSERT INTO mensal (id_agendamento, data) VALUES (1, '2023-04-19');
+INSERT INTO aluguel (id_agendamento, disponibilidade) VALUES (2, 'sim');
+INSERT INTO aluguel (id_agendamento, disponibilidade) VALUES (3, 'sim');
+INSERT INTO aluguel (id_agendamento, disponibilidade) VALUES (4, 'sim');
+INSERT INTO evento (id_agendamento, tipo) VALUES (5, 'Voleibol Beneficente');
+INSERT INTO aluguel (id_agendamento, disponibilidade) VALUES (6, 'não');
+INSERT INTO aluguel (id_agendamento, disponibilidade) VALUES (7, 'não');
 
