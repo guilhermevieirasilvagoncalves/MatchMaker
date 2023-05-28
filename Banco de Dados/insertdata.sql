@@ -31,20 +31,20 @@ VALUES (6, 'crédito', '30/07/2023','123.123.123-43');
 INSERT INTO pagamento (id_pagamento, metodo_pag, data, cpf)
 VALUES (7, 'boleto', '19/08/2023','343.433.644-12');
 
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (1, '2023-04-19', 120.44, '22:00', '123.123.123-43', 1, 1, '58.120.403/0009-81');
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (2, '2023-04-30', 120.44, '21:00', '123.123.123-43', 1, 2, '58.120.403/0009-81');
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (3, '2023-05-11', 120.44, '17:00', '432.322.432-21', 1, 3, '58.120.403/0009-81');
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (4, '2023-05-14', 135.42, '18:00', '432.322.432-21', 2, 4, '45.232.431/0003-12');
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (5, '2023-05-16', 135.42, '19:00', '343.433.644-12', 2, 5, '45.232.431/0003-12');
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (6, '2023-07-30', 112.54, '22:00', '123.123.123-43', 3, 6, '32.123.453/0007-25');
-INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj)
-VALUES (7, '2023-08-19', 134.65, '19:00', '343.433.644-12', 4, 7, '54.643.234/0001-22');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (1, '2023-04-19', 120.44, '22:00', '123.123.123-43', 1, 1, '58.120.403/0009-81', 'mensal');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (2, '2023-04-30', 120.44, '21:00', '123.123.123-43', 1, 2, '58.120.403/0009-81', 'aluguel');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (3, '2023-05-11', 120.44, '17:00', '432.322.432-21', 1, 3, '58.120.403/0009-81', 'aluguel');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (4, '2023-05-14', 135.42, '18:00', '432.322.432-21', 2, 4, '45.232.431/0003-12', 'aluguel');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (5, '2023-05-16', 135.42, '19:00', '343.433.644-12', 2, 5, '45.232.431/0003-12','evento');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (6, '2023-07-30', 112.54, '22:00', '123.123.123-43', 3, 6, '32.123.453/0007-25', 'aluguel');
+INSERT INTO agendamento (id_agendamento, data, preco, horario, cpf, id_quadra, id_pagamento, cnpj, tipo)
+VALUES (7, '2023-08-19', 134.65, '19:00', '343.433.644-12', 4, 7, '54.643.234/0001-22', 'aluguel');
 
 INSERT INTO mensal (id_agendamento, data) VALUES (1, '2023-04-19');
 INSERT INTO aluguel (id_agendamento, disponibilidade) VALUES (2, 'sim');
