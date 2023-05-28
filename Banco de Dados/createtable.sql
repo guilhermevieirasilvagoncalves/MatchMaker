@@ -48,6 +48,7 @@ CREATE TABLE Agendamento (
   Preco FLOAT,
   Horario VARCHAR(255),
   CPF VARCHAR(255),
+  tipo VARCHAR(255),
   id_quadra INTEGER,
   id_pagamento INTEGER,
   CNPJ VARCHAR(255),
