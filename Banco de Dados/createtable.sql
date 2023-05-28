@@ -10,7 +10,7 @@ CREATE TABLE Quadra (
 
   CEP VARCHAR(255),
   id_quadra INTEGER,
-  Numero INTEGER,
+  Numero VARCHAR(255),
   Preco FLOAT,
   Caracteristicas VARCHAR(255),
   Esporte VARCHAR(255),
